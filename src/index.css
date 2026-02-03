@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+/* Aerovit Theme - Solo Leveling Inspired */
+:root {
+  /* Blue Rank Theme */
+  --primary: #1E88E5;
+  --primary-light: #42A5F5;
+  --accent: #00D9FF;
+  --background: #0A0E1A;
+  --surface: #0F1419;
+  --card: #1A2332;
+  
+  /* Text */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0C3;
+  --text-muted: #6E6E82;
+  
+  /* Status */
+  --success: #4CAF50;
+  --warning: #FFC107;
+  --error: #F44336;
+  
+  /* HUD */
+  --hud-glow: #93c5fd;
+  --hud-grid: #0ea5e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* HUD Panel */
+.hud-panel {
+  background: var(--surface);
+  border: 1px solid rgba(30, 136, 229, 0.3);
+  border-radius: 8px;
+}
+
+/* HUD Box */
+.hud-box {
+  background: var(--card);
+  border: 1px solid rgba(30, 136, 229, 0.2);
+  border-radius: 6px;
+}
+
+.hud-box:hover {
+  border-color: rgba(30, 136, 229, 0.4);
+}
+
+/* Grid background */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(14, 165, 233, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(30, 136, 229, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: rgba(30, 136, 229, 0.1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 136, 229, 0.4);
+  border-radius: 3px;
+}
+
+/* Code blocks */
+pre, code {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+pre {
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  border: 1px solid rgba(30, 136, 229, 0.1);
+}
+
+code {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.875em;
+  color: var(--accent);
+}
+
+pre code {
+  padding: 0;
+  color: var(--text-primary);
+}
+
+/* Selection */
+::selection {
+  background: rgba(30, 136, 229, 0.3);
+}
+
+/* Focus */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}
