@@ -29,6 +29,7 @@ export default function Header() {
     { path: '/getting-started', label: 'Getting Started' },
     { path: '/features', label: 'Features' },
     { path: '/architecture', label: 'Architecture' },
+    { path: '/progress', label: 'Progress' },
   ]
 
   return (

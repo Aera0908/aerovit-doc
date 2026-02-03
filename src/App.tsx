@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import Features from './pages/Features'
 import Architecture from './pages/Architecture'
+import Progress from './pages/Progress'
 
 function AppContent() {
   const location = useLocation()
@@ -28,6 +29,7 @@ function AppContent() {
               <Route path="/getting-started" element={<GettingStarted />} />
               <Route path="/features" element={<Features />} />
               <Route path="/architecture" element={<Architecture />} />
+              <Route path="/progress" element={<Progress />} />
             </Routes>
           </main>
         </div>

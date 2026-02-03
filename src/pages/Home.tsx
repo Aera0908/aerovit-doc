@@ -86,6 +86,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Project Timeline */}
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">Project Milestones</h2>
+          <p className="text-center text-[var(--text-secondary)] mb-12 max-w-2xl mx-auto">
+            Track our journey from concept to completion
+          </p>
+          
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute top-6 left-0 right-0 h-1 bg-gradient-to-r from-[var(--primary)]/20 via-[var(--primary)]/40 to-[var(--primary)]/20" />
+            
+            {/* Timeline Items */}
+            <div className="relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+              <TimelineItem 
+                milestone="Concept" 
+                status="completed"
+                description="Initial planning"
+              />
+              <TimelineItem 
+                milestone="Hardware" 
+                status="completed"
+                description="ESP32 watch design"
+              />
+              <TimelineItem 
+                milestone="BlazePose" 
+                status="completed"
+                description="CV integration"
+              />
+              <TimelineItem 
+                milestone="Mobile App" 
+                status="completed"
+                description="Flutter development"
+              />
+              <TimelineItem 
+                milestone="AI Coach" 
+                status="active"
+                description="RAG system"
+              />
+              <TimelineItem 
+                milestone="Testing" 
+                status="upcoming"
+                description="User trials"
+              />
+              <TimelineItem 
+                milestone="Launch" 
+                status="upcoming"
+                description="Final release"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Core Features */}
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
@@ -157,6 +211,62 @@ export default function Home() {
           </Link>
         </div>
       </section>
+    </div>
+  )
+}
+
+interface TimelineItemProps {
+  milestone: string
+  status: 'completed' | 'active' | 'upcoming'
+  description: string
+}
+
+function TimelineItem({ milestone, status, description }: TimelineItemProps) {
+  const getStatusColor = () => {
+    switch (status) {
+      case 'completed':
+        return 'bg-green-500 border-green-500'
+      case 'active':
+        return 'bg-[var(--primary)] border-[var(--primary)] animate-pulse'
+      case 'upcoming':
+        return 'bg-[var(--card)] border-[var(--primary)]/30'
+      default:
+        return 'bg-[var(--card)] border-[var(--primary)]/30'
+    }
+  }
+
+  const getTextColor = () => {
+    switch (status) {
+      case 'completed':
+        return 'text-green-400'
+      case 'active':
+        return 'text-[var(--primary-light)]'
+      case 'upcoming':
+        return 'text-[var(--text-muted)]'
+      default:
+        return 'text-[var(--text-muted)]'
+    }
+  }
+
+  return (
+    <div className="flex flex-col items-center">
+      {/* Circle Marker */}
+      <div className={`relative w-12 h-12 rounded-full border-4 ${getStatusColor()} flex items-center justify-center mb-3 z-10`}>
+        {status === 'completed' && (
+          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+          </svg>
+        )}
+        {status === 'active' && (
+          <div className="w-3 h-3 rounded-full bg-white" />
+        )}
+      </div>
+      
+      {/* Milestone Info */}
+      <div className="text-center">
+        <p className={`font-semibold text-sm mb-1 ${getTextColor()}`}>{milestone}</p>
+        <p className="text-xs text-[var(--text-muted)]">{description}</p>
+      </div>
     </div>
   )
 }
