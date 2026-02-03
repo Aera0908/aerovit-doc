@@ -20,14 +20,12 @@ export default function Footer() {
               >
                 Documentation
               </Link>
-              <a 
-                href="https://github.com/aerovit"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--text-secondary)] hover:text-white transition-colors"
+              <span 
+                className="text-[var(--text-muted)] opacity-50 cursor-not-allowed"
+                title="Currently Unavailable"
               >
-                GitHub
-              </a>
+                GitHub (Unavailable)
+              </span>
             </div>
           </div>
 

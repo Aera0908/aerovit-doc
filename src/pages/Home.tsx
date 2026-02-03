@@ -25,14 +25,13 @@ export default function Home() {
             <Link to="/getting-started" className="btn-primary">
               View Documentation
             </Link>
-            <a
-              href="https://github.com/aerovit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
+            <button
+              disabled
+              className="btn-secondary opacity-50 cursor-not-allowed"
+              title="Currently Unavailable"
             >
-              Source Code
-            </a>
+              Source Code (Currently Unavailable)
+            </button>
           </div>
         </div>
       </section>

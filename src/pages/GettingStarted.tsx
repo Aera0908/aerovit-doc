@@ -27,11 +27,11 @@ export default function GettingStarted() {
         <h2 className="text-xl font-semibold text-white mb-4">Installation</h2>
         
         <div className="space-y-6">
-          <div>
-            <h3 className="text-base font-medium text-[var(--primary-light)] mb-2">1. Clone the Repository</h3>
-            <pre className="text-sm">
-              <code>git clone https://github.com/aerovit/aerovit.git{'\n'}cd aerovit</code>
-            </pre>
+          <div className="opacity-50">
+            <h3 className="text-base font-medium text-[var(--text-muted)] mb-2">1. Clone the Repository</h3>
+            <div className="hud-box p-4 border-dashed">
+              <p className="text-sm text-[var(--text-muted)] italic">⚠️ Source code repository is currently unavailable</p>
+            </div>
           </div>
 
           <div>
