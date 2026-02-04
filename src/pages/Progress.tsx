@@ -58,14 +58,55 @@ export default function Progress() {
       {/* Recent Updates */}
       <div className="hud-panel p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Recent Updates</h2>
-        <div className="space-y-4">
+        <div className="space-y-6">
+          {/* February 5, 2026 Update */}
+          <div className="border-l-2 border-green-500 pl-4">
+            <p className="text-sm text-green-400 font-medium">February 5, 2026</p>
+            <p className="text-white font-semibold mb-2">Major Hardware & App Integration Update</p>
+            <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">QR Code Pairing Bug Fix</strong> — Resolved connectivity issues during device pairing</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Quest Progress Sync</strong> — Connected quest progress from app to hardware display</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Activity Auto-Detection</strong> — Implemented cadence-based activity classification (Idle/Walk/Run)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Activity Stats Page</strong> — Created dedicated watch UI page with cadence arc, calories, walk/run time</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Page Reordering</strong> — New order: Biometrics → Activity Stats → Quest → Connection</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">False Detection Fix</strong> — Increased idle threshold to 50 spm for better accuracy</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Layout Fixes</strong> — Adjusted Walk/Run label positions to prevent overlap with timers</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">App Integration</strong> — Extended BLE protocol to send activity data (24-byte packets)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Dashboard Update</strong> — Added Activity Stats section with activity type card and 4 metric cards</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* February 3, 2026 Update */}
           <div className="border-l-2 border-[var(--primary)] pl-4">
             <p className="text-sm text-[var(--text-muted)]">February 3, 2026</p>
             <p className="text-white">Documentation site launched with initial content</p>
-          </div>
-          <div className="border-l-2 border-[var(--primary)]/50 pl-4">
-            <p className="text-sm text-[var(--text-muted)]">Coming Soon</p>
-            <p className="text-[var(--text-secondary)]">More detailed progress tracking and milestones</p>
           </div>
         </div>
       </div>
