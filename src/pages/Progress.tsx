@@ -59,6 +59,38 @@ export default function Progress() {
       <div className="hud-panel p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Recent Updates</h2>
         <div className="space-y-6">
+          {/* February 5, 2026 Update - Social Auth */}
+          <div className="border-l-2 border-purple-500 pl-4">
+            <p className="text-sm text-purple-400 font-medium">February 5, 2026 — Evening</p>
+            <p className="text-white font-semibold mb-2">Social Authentication & Wallet Integration</p>
+            <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Google Sign-In</strong> — Added Google authentication via Firebase Auth</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Facebook Login</strong> — Integrated Facebook authentication with flutter_facebook_auth</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-0.5">✓</span>
+                <span><strong className="text-white">MetaMask Sign-In</strong> — Wallet-based authentication using Ethereum address + signature</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Social Login UI</strong> — HUD-styled buttons for Google, Facebook, MetaMask on login screen</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-0.5">✓</span>
+                <span><strong className="text-white">WalletService Provider</strong> — Registered WalletService in MultiProvider for global access</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Package Fix</strong> — Downgraded google_sign_in to v6.x for API compatibility</span>
+              </li>
+            </ul>
+          </div>
+
           {/* February 5, 2026 Update */}
           <div className="border-l-2 border-green-500 pl-4">
             <p className="text-sm text-green-400 font-medium">February 5, 2026</p>
