@@ -7,6 +7,7 @@ import GettingStarted from './pages/GettingStarted'
 import Features from './pages/Features'
 import Architecture from './pages/Architecture'
 import Progress from './pages/Progress'
+import Tokenomics from './pages/Tokenomics'
 
 function AppContent() {
   const location = useLocation()
@@ -30,6 +31,7 @@ function AppContent() {
               <Route path="/features" element={<Features />} />
               <Route path="/architecture" element={<Architecture />} />
               <Route path="/progress" element={<Progress />} />
+              <Route path="/tokenomics" element={<Tokenomics />} />
             </Routes>
           </main>
         </div>

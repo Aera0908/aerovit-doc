@@ -12,8 +12,8 @@ export default function Features() {
         <section>
           <h2 className="text-xl font-semibold text-white mb-4">Daily Quest System</h2>
           <p className="text-[var(--text-secondary)] mb-4 text-sm">
-            Inspired by Solo Leveling, the daily quest system provides personalized challenges
-            that adapt to your fitness level and rank progression.
+            The gamified daily quest system provides personalized challenges
+            that adapt to your fitness level and rank progression, rewarding you with AERO tokens.
           </p>
           <div className="hud-box p-5">
             <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Key Features</h3>
@@ -88,6 +88,35 @@ export default function Features() {
               <li>Streak tracking and rewards</li>
               <li>Historical workout data visualization</li>
               <li>Personal records and achievements</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-white mb-4">Web3 Integration</h2>
+          <p className="text-[var(--text-secondary)] mb-4 text-sm">
+            Built-in cryptocurrency wallet and move-to-earn mechanics powered by the Ethereum blockchain.
+          </p>
+          <div className="hud-box p-5">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Blockchain Features</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">AERO Token:</span> ERC-20 token for workout rewards (Sepolia Testnet)</li>
+              <li><span className="text-white">Wallet:</span> Embedded crypto wallet with MetaMask sign-in support</li>
+              <li><span className="text-white">Move-to-Earn:</span> Earn tokens for completing daily quests and workouts</li>
+              <li><span className="text-white">Social Auth:</span> Google, Facebook, and MetaMask authentication</li>
+              <li><span className="text-white">On-Chain:</span> Transparent reward distribution via smart contracts</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-white mb-4">Authentication Options</h2>
+          <div className="hud-box p-5">
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">Email/Password:</span> Traditional Firebase authentication</li>
+              <li><span className="text-white">Google Sign-In:</span> Quick access via Google account</li>
+              <li><span className="text-white">Facebook Login:</span> Social authentication integration</li>
+              <li><span className="text-white">MetaMask:</span> Web3 wallet-based authentication with Ethereum address</li>
             </ul>
           </div>
         </section>
