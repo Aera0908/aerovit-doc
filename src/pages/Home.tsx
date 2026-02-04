@@ -98,7 +98,7 @@ export default function Home() {
             <div className="absolute top-6 left-0 right-0 h-1 bg-gradient-to-r from-[var(--primary)]/20 via-[var(--primary)]/40 to-[var(--primary)]/20" />
             
             {/* Timeline Items */}
-            <div className="relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+            <div className="relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-9 gap-4">
               <TimelineItem 
                 milestone="Concept" 
                 status="completed"
@@ -120,9 +120,19 @@ export default function Home() {
                 description="Flutter development"
               />
               <TimelineItem 
+                milestone="Web3" 
+                status="completed"
+                description="Wallet & tokens"
+              />
+              <TimelineItem 
                 milestone="AI Coach" 
                 status="active"
                 description="RAG system"
+              />
+              <TimelineItem 
+                milestone="Tokenomics" 
+                status="upcoming"
+                description="AERO economy"
               />
               <TimelineItem 
                 milestone="Testing" 
