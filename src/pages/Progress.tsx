@@ -1,9 +1,11 @@
 export default function Progress() {
   const progressData = [
-    { category: 'Mobile App', percentage: 85, status: 'In Development' },
-    { category: 'Wearable Device', percentage: 70, status: 'In Development' },
-    { category: 'AI Coach', percentage: 60, status: 'In Development' },
-    { category: 'Documentation', percentage: 70, status: 'In Progress' },
+    { category: 'Mobile App', percentage: 90, status: 'In Development' },
+    { category: 'Dungeon Raid Game', percentage: 75, status: 'In Development' },
+    { category: 'Wearable Device', percentage: 80, status: 'In Development' },
+    { category: 'AI Coach', percentage: 65, status: 'In Development' },
+    { category: 'Web3 Integration', percentage: 70, status: 'In Development' },
+    { category: 'Documentation', percentage: 75, status: 'In Progress' },
   ]
 
   const overallProgress = Math.round(
@@ -59,6 +61,46 @@ export default function Progress() {
       <div className="hud-panel p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Recent Updates</h2>
         <div className="space-y-6">
+          {/* February 9, 2026 Update - Dungeon Game */}
+          <div className="border-l-2 border-orange-500 pl-4">
+            <p className="text-sm text-orange-400 font-medium">February 9, 2026</p>
+            <p className="text-white font-semibold mb-2">Dungeon Raid Game System - Complete Implementation</p>
+            <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <span className="text-orange-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Turn-Based Combat</strong> — Pokemon-style strategic battles with speed-based turn order</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Status Effect System</strong> — 10 status effects: Poison, Burn, Freeze, Paralysis, Bleed, Stun, Weaken, Slow, Blind, Curse</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Skill System</strong> — 20+ skills including Physical, Magic, Heal, Buff, and Status types with SP costs</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Multi-Enemy Battles</strong> — Fight multiple enemies per floor with target selection</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Dungeon Floor Progression</strong> — 5-floor dungeons with boss fights and AERO token rewards</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Flame 2D Integration</strong> — Full game engine with sprites, animations, and effects</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Character Stats</strong> — 6-stat system (STR, VIT, AGI, INT, END, LUK) with derived combat stats</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Workout Integration</strong> — Character stats scale with user's fitness progress and streak multiplier</span>
+              </li>
+            </ul>
+          </div>
+
           {/* February 5, 2026 Update - Social Auth */}
           <div className="border-l-2 border-purple-500 pl-4">
             <p className="text-sm text-purple-400 font-medium">February 5, 2026 — Evening</p>

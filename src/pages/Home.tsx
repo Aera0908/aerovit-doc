@@ -125,14 +125,14 @@ export default function Home() {
                 description="Wallet & tokens"
               />
               <TimelineItem 
-                milestone="AI Coach" 
+                milestone="Dungeon Game" 
                 status="active"
-                description="RAG system"
+                description="Turn-based RPG"
               />
               <TimelineItem 
-                milestone="Tokenomics" 
+                milestone="AI Coach" 
                 status="upcoming"
-                description="AERO economy"
+                description="RAG system"
               />
               <TimelineItem 
                 milestone="Testing" 
@@ -178,6 +178,16 @@ export default function Home() {
               title="Biometric Monitoring"
               description="Heart rate, SpO2, temperature, and motion tracking via custom ESP32 smartwatch with BLE connectivity."
             />
+            <FeatureCard
+              icon={<GameIcon />}
+              title="Dungeon Raid Game"
+              description="Pokemon-style turn-based RPG where your workout progress powers your character. Battle enemies, earn AERO tokens, and conquer dungeons."
+            />
+            <FeatureCard
+              icon={<WalletIcon />}
+              title="Web3 Wallet"
+              description="Built-in crypto wallet with MetaMask integration. Earn, store, and manage AERO tokens from your fitness achievements."
+            />
           </div>
         </div>
       </section>
@@ -187,10 +197,14 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Technology Stack</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
             <TechCard 
               category="Mobile App" 
               technologies={['Flutter', 'Dart', 'Firebase']} 
+            />
+            <TechCard 
+              category="Game Engine" 
+              technologies={['Flame 2D', 'Sprites', 'Animations']} 
             />
             <TechCard 
               category="AI / ML" 
@@ -198,7 +212,7 @@ export default function Home() {
             />
             <TechCard 
               category="Hardware" 
-              technologies={['ESP32', 'MAX30102', 'MPU6050', 'BLE']} 
+              technologies={['ESP32', 'MAX30102', 'QMI8658', 'BLE']} 
             />
             <TechCard 
               category="Backend" 
@@ -361,6 +375,23 @@ function WatchIcon() {
   return (
     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  )
+}
+
+function GameIcon() {
+  return (
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  )
+}
+
+function WalletIcon() {
+  return (
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
     </svg>
   )
 }

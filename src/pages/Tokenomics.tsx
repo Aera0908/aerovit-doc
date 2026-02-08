@@ -1,119 +1,119 @@
 export default function Tokenomics() {
   return (
     <div className="max-w-3xl">
-      <div className="flex items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-white">
-          Tokenomics
-        </h1>
-        <span className="px-2 py-1 text-xs font-medium rounded bg-yellow-500/20 text-yellow-400 border border-yellow-500/30">
-          Coming Soon
-        </span>
-      </div>
+      <h1 className="text-3xl font-bold text-white mb-2">
+        Tokenomics
+      </h1>
       <p className="text-[var(--text-secondary)] mb-8">
-        AERO token economics and distribution model.
+        AERO token economy and move-to-earn mechanics.
       </p>
       
-      <div className="space-y-8">
-        {/* Coming Soon Banner */}
-        <div className="hud-box p-8 text-center border-yellow-500/30">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-yellow-500/10 flex items-center justify-center">
-            <svg className="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <h2 className="text-xl font-semibold text-white mb-2">Tokenomics Under Development</h2>
-          <p className="text-[var(--text-secondary)] mb-4 max-w-md mx-auto">
-            The AERO token economics are currently being finalized. Full tokenomics details 
-            including distribution, utility, and vesting schedules will be announced soon.
-          </p>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--card)] border border-[var(--primary)]/20">
-            <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse" />
-            <span className="text-sm text-[var(--text-muted)]">Expected Q2 2026</span>
-          </div>
-        </div>
-
-        {/* Preview Sections */}
-        <section className="opacity-50">
-          <h2 className="text-xl font-semibold text-white mb-4">Token Overview</h2>
-          <div className="hud-box p-5">
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <p className="text-[var(--text-muted)] mb-1">Token Name</p>
-                <p className="text-white font-medium">AERO Token</p>
-              </div>
-              <div>
-                <p className="text-[var(--text-muted)] mb-1">Network</p>
-                <p className="text-white font-medium">Ethereum (Sepolia Testnet)</p>
-              </div>
-              <div>
-                <p className="text-[var(--text-muted)] mb-1">Token Standard</p>
-                <p className="text-white font-medium">ERC-20</p>
-              </div>
-              <div>
-                <p className="text-[var(--text-muted)] mb-1">Total Supply</p>
-                <p className="text-white font-medium">TBA</p>
-              </div>
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold text-white mb-4">AERO Token Overview</h2>
+        <div className="hud-box p-5">
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <p className="text-xs text-[var(--text-muted)]">Token Name</p>
+              <p className="text-white font-medium">AERO Token</p>
+            </div>
+            <div>
+              <p className="text-xs text-[var(--text-muted)]">Token Standard</p>
+              <p className="text-white font-medium">ERC-20</p>
+            </div>
+            <div>
+              <p className="text-xs text-[var(--text-muted)]">Network</p>
+              <p className="text-white font-medium">Ethereum (Sepolia Testnet)</p>
+            </div>
+            <div>
+              <p className="text-xs text-[var(--text-muted)]">Decimals</p>
+              <p className="text-white font-medium">18</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="opacity-50">
-          <h2 className="text-xl font-semibold text-white mb-4">Token Utility</h2>
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold text-white mb-4">Earning AERO Tokens</h2>
+        <div className="space-y-4">
           <div className="hud-box p-5">
-            <ul className="text-[var(--text-secondary)] space-y-3 text-sm">
-              <li className="flex items-start gap-2">
-                <span className="text-[var(--primary-light)] mt-0.5">◆</span>
-                <span><strong className="text-white">Workout Rewards:</strong> Earn AERO tokens for completing daily quests and challenges</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-[var(--primary-light)] mt-0.5">◆</span>
-                <span><strong className="text-white">Staking:</strong> Stake AERO to unlock premium features and boost earning rates</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-[var(--primary-light)] mt-0.5">◆</span>
-                <span><strong className="text-white">Governance:</strong> Participate in platform decisions and feature voting</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-[var(--primary-light)] mt-0.5">◆</span>
-                <span><strong className="text-white">Marketplace:</strong> Purchase exclusive gear, coaches, and customizations</span>
-              </li>
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Daily Quest Rewards</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">Quest Completion:</span> 10-50 AERO per quest based on difficulty</li>
+              <li><span className="text-white">Daily Full Clear:</span> +100 AERO bonus for completing all quests</li>
+              <li><span className="text-white">Streak Bonus:</span> +10% per consecutive day (up to 100%)</li>
             </ul>
           </div>
-        </section>
 
-        <section className="opacity-50">
-          <h2 className="text-xl font-semibold text-white mb-4">Distribution</h2>
           <div className="hud-box p-5">
-            <p className="text-[var(--text-muted)] text-sm text-center py-8">
-              Token distribution chart will be available after tokenomics finalization
-            </p>
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Dungeon Raid Rewards</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">Floor Clear:</span> 5-20 AERO per floor</li>
+              <li><span className="text-white">Boss Defeat:</span> 50-200 AERO per boss</li>
+              <li><span className="text-white">Full Dungeon Clear:</span> Bonus AERO based on performance</li>
+              <li><span className="text-white">First Clear Bonus:</span> 2x rewards on first completion</li>
+            </ul>
           </div>
-        </section>
 
-        {/* Subscribe for Updates */}
-        <div className="hud-box p-6 bg-gradient-to-br from-[var(--primary)]/5 to-transparent">
-          <h3 className="text-lg font-semibold text-white mb-2">Stay Updated</h3>
-          <p className="text-sm text-[var(--text-secondary)] mb-4">
-            Follow our progress and be the first to know when tokenomics are announced.
-          </p>
-          <div className="flex gap-3">
-            <a 
-              href="https://github.com/Aera0908" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn-secondary text-sm"
-            >
-              GitHub
-            </a>
-            <button 
-              disabled 
-              className="btn-primary text-sm opacity-50 cursor-not-allowed"
-            >
-              Discord (Coming Soon)
-            </button>
+          <div className="hud-box p-5">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Achievement Rewards</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">Rank Up:</span> 100-1000 AERO per rank advancement</li>
+              <li><span className="text-white">Milestones:</span> Variable AERO for reaching milestones</li>
+              <li><span className="text-white">Personal Records:</span> 50 AERO per new PR</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold text-white mb-4">Token Utility</h2>
+        <div className="hud-box p-5">
+          <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+            <li><span className="text-white">In-Game Purchases:</span> Buy equipment and items in Dungeon Raid</li>
+            <li><span className="text-white">Stamina Refill:</span> Restore dungeon stamina</li>
+            <li><span className="text-white">Skill Unlocks:</span> Unlock new combat skills</li>
+            <li><span className="text-white">Cosmetics:</span> Purchase character skins and effects</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold text-white mb-4">Wallet Integration</h2>
+        <div className="space-y-4">
+          <div className="hud-box p-5">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Supported Wallets</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">MetaMask:</span> Primary wallet integration with sign-in support</li>
+              <li><span className="text-white">WalletConnect:</span> Connect any compatible mobile wallet</li>
+              <li><span className="text-white">Embedded Wallet:</span> In-app wallet for new crypto users</li>
+            </ul>
+          </div>
+
+          <div className="hud-box p-5">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Authentication Methods</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">MetaMask Sign-In:</span> Authenticate with Ethereum address + signature</li>
+              <li><span className="text-white">Wallet Linking:</span> Link wallet to existing email/social account</li>
+              <li><span className="text-white">Multi-Wallet:</span> Support for multiple wallet addresses</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold text-white mb-4">Token Economics</h2>
+        <div className="hud-box p-5">
+          <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Burn Mechanics</h3>
+          <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+            <li><span className="text-white">Equipment Purchases:</span> Tokens spent are partially burned</li>
+            <li><span className="text-white">Stamina Refills:</span> 50% of tokens spent are burned</li>
+            <li><span className="text-white">Premium Features:</span> Variable burn rate based on feature</li>
+          </ul>
+          <p className="text-xs text-[var(--text-muted)] mt-4 italic">
+            Note: Tokenomics are subject to change during development. Currently deployed on Sepolia Testnet.
+          </p>
+        </div>
+      </section>
     </div>
   )
 }

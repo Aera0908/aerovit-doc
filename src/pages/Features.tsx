@@ -66,15 +66,17 @@ export default function Features() {
         <section>
           <h2 className="text-xl font-semibold text-white mb-4">Wearable Integration</h2>
           <p className="text-[var(--text-secondary)] mb-4 text-sm">
-            Custom ESP32-based smartwatch for continuous biometric monitoring during workouts.
+            Custom ESP32-S3 based smartwatch for continuous biometric monitoring and activity tracking.
           </p>
           <div className="hud-box p-5">
             <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Hardware Components</h3>
             <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
               <li><span className="text-white">MAX30102:</span> Heart rate and SpO2 monitoring</li>
-              <li><span className="text-white">MPU6050:</span> Motion tracking (accelerometer + gyroscope)</li>
-              <li><span className="text-white">Filtering:</span> Kalman and moving average filters for clean data</li>
+              <li><span className="text-white">QMI8658:</span> 6-axis IMU (accelerometer + gyroscope)</li>
+              <li><span className="text-white">Activity Detection:</span> Auto-detect walking, running, idle states</li>
+              <li><span className="text-white">Signal Filtering:</span> Kalman and moving average filters for clean data</li>
               <li><span className="text-white">BLE:</span> Real-time data transmission to mobile app</li>
+              <li><span className="text-white">Quest Sync:</span> Display quest progress on watch</li>
             </ul>
           </div>
         </section>
@@ -88,6 +90,35 @@ export default function Features() {
               <li>Streak tracking and rewards</li>
               <li>Historical workout data visualization</li>
               <li>Personal records and achievements</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-white mb-4">Dungeon Raid Game</h2>
+          <p className="text-[var(--text-secondary)] mb-4 text-sm">
+            Pokemon-style turn-based dungeon crawler where your workout progress powers your in-game character.
+          </p>
+          <div className="hud-box p-5">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Game Features</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">Turn-Based Combat:</span> Speed-based turn order with strategic skill selection</li>
+              <li><span className="text-white">Status Effects:</span> 10 effects including Poison, Burn, Freeze, Paralysis, and more</li>
+              <li><span className="text-white">Skill System:</span> 20+ skills across Physical, Magic, Heal, Buff, and Status categories</li>
+              <li><span className="text-white">Multi-Enemy Battles:</span> Fight multiple enemies per floor with target selection</li>
+              <li><span className="text-white">5-Floor Dungeons:</span> Progressive difficulty with boss fights</li>
+              <li><span className="text-white">AERO Token Rewards:</span> Earn tokens for dungeon completion</li>
+            </ul>
+          </div>
+          <div className="hud-box p-5 mt-4">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Character Stats</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">STR (Strength):</span> Physical damage and carry weight</li>
+              <li><span className="text-white">VIT (Vitality):</span> Max HP and defense</li>
+              <li><span className="text-white">AGI (Agility):</span> Speed, dodge chance, and crit chance</li>
+              <li><span className="text-white">INT (Intelligence):</span> Magic damage and max mana</li>
+              <li><span className="text-white">END (Endurance):</span> Stamina regen and status resistance</li>
+              <li><span className="text-white">LUK (Luck):</span> Drop rates and crit damage</li>
             </ul>
           </div>
         </section>

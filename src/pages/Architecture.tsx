@@ -74,14 +74,28 @@ export default function Architecture() {
           </div>
 
           <div className="hud-box p-5">
+            <h3 className="text-base font-medium text-white mb-2">Dungeon Raid Game</h3>
+            <p className="text-[var(--text-secondary)] mb-3 text-sm">
+              Turn-based RPG mini-game powered by Flame 2D engine.
+            </p>
+            <ul className="text-[var(--text-muted)] text-sm space-y-1">
+              <li>Flame 2D: Sprite rendering and animations</li>
+              <li>Turn-based combat with speed priority</li>
+              <li>Status effects and skill system</li>
+              <li>AERO token rewards integration</li>
+            </ul>
+          </div>
+
+          <div className="hud-box p-5">
             <h3 className="text-base font-medium text-white mb-2">ESP32 Wearable</h3>
             <p className="text-[var(--text-secondary)] mb-3 text-sm">
               Custom smartwatch hardware for biometric monitoring.
             </p>
             <ul className="text-[var(--text-muted)] text-sm space-y-1">
               <li>MAX30102: Heart rate + SpO2</li>
-              <li>MPU6050: Accelerometer + Gyroscope</li>
+              <li>QMI8658: 6-axis IMU (Accelerometer + Gyroscope)</li>
               <li>BLE data transmission</li>
+              <li>Activity auto-detection</li>
             </ul>
           </div>
         </div>
@@ -91,27 +105,36 @@ export default function Architecture() {
         <h2 className="text-xl font-semibold text-white mb-4">Data Flow</h2>
         <div className="hud-box p-5">
           <ol className="text-[var(--text-secondary)] space-y-2 text-sm list-decimal list-inside">
-            <li>User authenticates via Firebase</li>
+            <li>User authenticates via Firebase (Email, Google, Facebook, or MetaMask)</li>
             <li>App fetches user profile and daily quest from Firestore</li>
             <li>User starts workout session</li>
             <li>BlazePose analyzes camera feed for rep counting</li>
             <li>ESP32 wearable transmits biometric data via BLE</li>
             <li>AI Coach provides real-time feedback</li>
             <li>Workout data is saved to Firestore</li>
-            <li>User profile is updated with XP and progress</li>
+            <li>User profile is updated with XP, AERO tokens, and progress</li>
+            <li>Character stats sync with Dungeon Game for RPG gameplay</li>
           </ol>
         </div>
       </section>
 
       <section>
         <h2 className="text-xl font-semibold text-white mb-4">Technology Stack</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="hud-box p-4">
             <h4 className="text-sm font-medium text-[var(--primary-light)] mb-2">Frontend</h4>
             <ul className="text-[var(--text-secondary)] text-sm space-y-1">
               <li>Flutter 3.16+</li>
               <li>Dart 3.2+</li>
               <li>Provider</li>
+            </ul>
+          </div>
+          <div className="hud-box p-4">
+            <h4 className="text-sm font-medium text-[var(--primary-light)] mb-2">Game Engine</h4>
+            <ul className="text-[var(--text-secondary)] text-sm space-y-1">
+              <li>Flame 2D</li>
+              <li>SpriteAnimations</li>
+              <li>Turn-Based Combat</li>
             </ul>
           </div>
           <div className="hud-box p-4">
@@ -133,9 +156,17 @@ export default function Architecture() {
           <div className="hud-box p-4">
             <h4 className="text-sm font-medium text-[var(--primary-light)] mb-2">Hardware</h4>
             <ul className="text-[var(--text-secondary)] text-sm space-y-1">
-              <li>ESP32</li>
+              <li>ESP32-S3</li>
               <li>MAX30102</li>
-              <li>MPU6050</li>
+              <li>QMI8658</li>
+            </ul>
+          </div>
+          <div className="hud-box p-4">
+            <h4 className="text-sm font-medium text-[var(--primary-light)] mb-2">Web3</h4>
+            <ul className="text-[var(--text-secondary)] text-sm space-y-1">
+              <li>Ethereum</li>
+              <li>MetaMask</li>
+              <li>ERC-20 Tokens</li>
             </ul>
           </div>
         </div>
@@ -156,6 +187,7 @@ function ArchitectureDiagram() {
       >
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-2">
           <MiniBox label="Daily Quest" />
+          <MiniBox label="Dungeon Game" />
           <MiniBox label="AI Coach" />
           <MiniBox label="Profile" />
         </div>
@@ -170,6 +202,7 @@ function ArchitectureDiagram() {
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
         <DiagramBox title="Firebase" subtitle="Backend" color="orange" className="flex-1" />
         <DiagramBox title="BlazePose" subtitle="Python" color="green" className="flex-1" />
+        <DiagramBox title="Flame 2D" subtitle="Game Engine" color="cyan" className="flex-1" />
       </div>
 
       {/* Connection: Services to Bottom */}
@@ -181,6 +214,7 @@ function ArchitectureDiagram() {
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
         <DiagramBox title="ESP32" subtitle="Wearable" color="purple" className="flex-1" />
         <DiagramBox title="AI Coach" subtitle="RAG" color="cyan" className="flex-1" />
+        <DiagramBox title="Web3" subtitle="MetaMask" color="orange" className="flex-1" />
       </div>
 
       {/* Legend */}
@@ -188,9 +222,9 @@ function ArchitectureDiagram() {
         <p className="text-xs text-[var(--text-muted)] mb-2">Components</p>
         <div className="flex flex-wrap gap-3 sm:gap-4 text-xs">
           <LegendItem color="primary" label="Mobile App" />
-          <LegendItem color="orange" label="Backend" />
+          <LegendItem color="orange" label="Backend/Web3" />
           <LegendItem color="green" label="Vision" />
-          <LegendItem color="cyan" label="AI" />
+          <LegendItem color="cyan" label="AI/Game" />
           <LegendItem color="purple" label="Hardware" />
         </div>
       </div>
