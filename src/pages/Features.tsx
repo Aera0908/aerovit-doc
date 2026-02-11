@@ -79,6 +79,27 @@ export default function Features() {
               <li><span className="text-white">Quest Sync:</span> Display quest progress on watch</li>
             </ul>
           </div>
+          <div className="hud-box p-5 mt-4">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Smart Wake/Sleep System</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">Raise-to-Wake:</span> Wrist tilt gesture shows soft wake time screen (10s timeout)</li>
+              <li><span className="text-white">Soft Wake:</span> Dim clock display for quick time checks without full wake</li>
+              <li><span className="text-white">Dashboard Wake:</span> Tap or power button for full dashboard access (10s timeout)</li>
+              <li><span className="text-white">Gesture Debounce:</span> 500ms touch debounce prevents false wakes from arm movement</li>
+              <li><span className="text-white">Power Button Toggle:</span> Quick sleep/wake toggle with direct dashboard access</li>
+              <li><span className="text-white">Timeout Chain:</span> Dashboard → soft wake → full sleep for battery conservation</li>
+            </ul>
+          </div>
+          <div className="hud-box p-5 mt-4">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Battery & Power Management</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">Voltage Monitoring:</span> ADC-based battery level with 2:1 voltage divider</li>
+              <li><span className="text-white">USB Detection:</span> Automatic USB vs battery mode detection (4180mV threshold)</li>
+              <li><span className="text-white">Charging Indicator:</span> Visual charging status when connected to USB</li>
+              <li><span className="text-white">Power Latch:</span> GPIO-controlled power system for clean shutdown</li>
+              <li><span className="text-white">Auto-Dim:</span> Reduces brightness after 5s inactivity to save power</li>
+            </ul>
+          </div>
         </section>
 
         <section>

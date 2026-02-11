@@ -61,6 +61,46 @@ export default function Progress() {
       <div className="hud-panel p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Recent Updates</h2>
         <div className="space-y-6">
+          {/* February 12, 2026 Update - Wake/Sleep System */}
+          <div className="border-l-2 border-cyan-500 pl-4">
+            <p className="text-sm text-cyan-400 font-medium">February 12, 2026</p>
+            <p className="text-white font-semibold mb-2">Watch Wake/Sleep System & Battery Detection</p>
+            <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Dual Timeout System</strong> — Soft wake (10s) and dashboard (10s) with separate timeout handling</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Raise-to-Wake → Soft Wake</strong> — Wrist raise shows time screen at dim brightness (10s timeout)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Touch → Dashboard</strong> — Tap during soft wake transitions to full dashboard</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Power Button Wake</strong> — Direct wake to dashboard, bypassing soft wake</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Soft Wake Debounce</strong> — 500ms debounce prevents false touch wakes from arm movement</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Battery Detection Fix</strong> — Fixed USB vs battery detection using 4180mV voltage threshold</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Charging Indicator</strong> — Correctly shows charging only when USB connected</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-400 mt-0.5">✓</span>
+                <span><strong className="text-white">ADC Debug Logging</strong> — Added raw ADC, pin voltage, and battery voltage logging</span>
+              </li>
+            </ul>
+          </div>
+
           {/* February 9, 2026 Update - Dungeon Game */}
           <div className="border-l-2 border-orange-500 pl-4">
             <p className="text-sm text-orange-400 font-medium">February 9, 2026</p>
