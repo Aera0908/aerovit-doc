@@ -7,6 +7,7 @@ const navigation = [
       { title: 'Getting Started', path: '/getting-started' },
       { title: 'Features', path: '/features' },
       { title: 'Architecture', path: '/architecture' },
+      { title: 'Hardware', path: '/hardware' },
       { title: 'Progress', path: '/progress' },
     ]
   },

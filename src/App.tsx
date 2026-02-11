@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import Features from './pages/Features'
 import Architecture from './pages/Architecture'
+import Hardware from './pages/Hardware'
 import Progress from './pages/Progress'
 import Tokenomics from './pages/Tokenomics'
 
@@ -30,6 +31,7 @@ function AppContent() {
               <Route path="/getting-started" element={<GettingStarted />} />
               <Route path="/features" element={<Features />} />
               <Route path="/architecture" element={<Architecture />} />
+              <Route path="/hardware" element={<Hardware />} />
               <Route path="/progress" element={<Progress />} />
               <Route path="/tokenomics" element={<Tokenomics />} />
             </Routes>
