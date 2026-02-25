@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import Footer from './components/Footer'
+import PageNavigation, { PageNavigationBottom } from './components/PageNavigation'
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import Features from './pages/Features'
@@ -24,9 +25,10 @@ function AppContent() {
           </Routes>
         </main>
       ) : (
-        <div className="flex flex-1">
+        <div className="flex flex-1 overflow-hidden">
           <Sidebar />
-          <main className="flex-1 p-8 max-w-4xl">
+          <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-4xl overflow-x-hidden">
+            <PageNavigation />
             <Routes>
               <Route path="/getting-started" element={<GettingStarted />} />
               <Route path="/features" element={<Features />} />
@@ -35,6 +37,7 @@ function AppContent() {
               <Route path="/progress" element={<Progress />} />
               <Route path="/tokenomics" element={<Tokenomics />} />
             </Routes>
+            <PageNavigationBottom />
           </main>
         </div>
       )}

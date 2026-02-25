@@ -1,11 +1,12 @@
 export default function Progress() {
   const progressData = [
-    { category: 'Mobile App', percentage: 90, status: 'In Development' },
-    { category: 'Dungeon Raid Game', percentage: 75, status: 'In Development' },
-    { category: 'Wearable Device', percentage: 80, status: 'In Development' },
-    { category: 'AI Coach', percentage: 65, status: 'In Development' },
-    { category: 'Web3 Integration', percentage: 70, status: 'In Development' },
-    { category: 'Documentation', percentage: 75, status: 'In Progress' },
+    { category: 'Mobile App', percentage: 92, status: 'In Development' },
+    { category: 'Dungeon Raid Game', percentage: 80, status: 'In Development' },
+    { category: 'Wearable Device', percentage: 90, status: 'In Development' },
+    { category: 'AI Coach', percentage: 75, status: 'In Development' },
+    { category: 'Web3 Integration', percentage: 85, status: 'In Development' },
+    { category: 'RL Model Integration', percentage: 90, status: 'Production Ready' },
+    { category: 'Documentation', percentage: 85, status: 'In Progress' },
   ]
 
   const overallProgress = Math.round(
@@ -61,6 +62,130 @@ export default function Progress() {
       <div className="hud-panel p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Recent Updates</h2>
         <div className="space-y-6">
+          {/* February 25, 2026 Update - Hardware Wallet & Token Burning */}
+          <div className="border-l-2 border-amber-500 pl-4">
+            <p className="text-sm text-amber-400 font-medium">February 25, 2026</p>
+            <p className="text-white font-semibold mb-2">Hardware Watch Wallet & Token Burning System</p>
+            <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Hardware Wallet Core</strong> — Full Ethereum wallet on ESP32-S3: BIP-39 mnemonic, BIP-32 key derivation, secp256k1 ECDSA signing</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Custom Keccak-256</strong> — On-device Ethereum address derivation (0x01 padding, not SHA3)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">AES-256 Key Storage</strong> — Private key encrypted with PKCS7 padding in ESP32 NVS flash, 16-byte IV + salt</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">PIN Security</strong> — PBKDF2 (10K iterations), 5-attempt lockout with 5-minute cooldown, session key in RAM only</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Secure Signing Flow</strong> — Private key decrypted in RAM only during signing, immediately wiped; EIP-2 s-normalization + recovery ID</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">BLE Wallet Protocol</strong> — 7 opcodes (CREATE/UNLOCK/LOCK/GET_ADDRESS/SIGN_TX/GET_STATUS) with response codes</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Wallet UI</strong> — Watch dashboard page showing AERO token balance, LOCKED/UNLOCKED badge, address display</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Token Burn System</strong> — 5% of every withdrawal burned on-chain via smart contract burn() function</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Cloud Function Withdrawal</strong> — Validate → Burn fee on-chain → Transfer net to wallet → Record burnTxHash in Firestore</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Planned Burn Tiers</strong> — In-game purchase burns: 3% cosmetics, 5% common, 7% rare, 8% epic, 10% legendary/stamina</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* February 23, 2026 Update - Social, Compare, Notifications, Trophy Case */}
+          <div className="border-l-2 border-emerald-500 pl-4">
+            <p className="text-sm text-emerald-400 font-medium">February 23, 2026</p>
+            <p className="text-white font-semibold mb-2">Social Tab, Compare Hunters, Notifications & Trophy Case</p>
+            <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Social Tab</strong> — Replaced Rank tab with Social: Leaderboards (Local / Global / Friends) and Friends list with friend requests (Accept/Decline)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Compare Hunters</strong> — Side-by-side compare with any leaderboard user: level, streak, XP, and dungeon character (floor cleared, ATK/DEF, equipped weapon/armor)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Notification Bell</strong> — Bell icon in upper-right of dashboard; mute option in Settings (persisted)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Trophy Case</strong> — Users select up to 3 achievements to display on their profile; shown in social profile dialog and leaderboard cards</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Profile Titles</strong> — Unlockable titles from achievements; selectable in Hunter Profile with All/Unlocked/Locked filters</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Firestore Social</strong> — friends and friendRequests collections; FirebaseService methods for send/accept/decline and streams for friends and requests</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* February 18, 2026 Update - Pre-Recorded Audio & Adaptive Workouts */}
+          <div className="border-l-2 border-pink-500 pl-4">
+            <p className="text-sm text-pink-400 font-medium">February 18, 2026</p>
+            <p className="text-white font-semibold mb-2">Pre-Recorded Audio System & Adaptive Workout Generation</p>
+            <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Zero-Delay Audio</strong> — Pre-generated voice files for instant workout feedback (0ms vs 1-3s API calls)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Three Coach Personalities</strong> — Fitness Monarch (serious), Luna (friendly), Valkyrie (fierce) with unique voice styles</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Modular Audio Chaining</strong> — Numbers (1-20) + modifiers dynamically chainable for rep feedback</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Exercise Library</strong> — 24 BlazePose-supported exercises across Legs, Push, Pull, Core, Full Body</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Equipment Selection</strong> — Bodyweight, Home Equipment, Gym modes for workout customization</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">35 Predefined Workouts</strong> — RAG-validated workouts with zero hallucination guarantee</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">In-Game Token System</strong> — Axie-style off-chain accumulation with on-chain withdrawal via hardware wallet</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Performance Optimization</strong> — Native splash screens, OptimizedHudBox (5x widget reduction), GPU-accelerated grids</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-pink-400 mt-0.5">✓</span>
+                <span><strong className="text-white">RL Model Production Ready</strong> — FSM-Constrained PPO with &gt;90% validation accuracy, ONNX/TFLite ready</span>
+              </li>
+            </ul>
+          </div>
+
           {/* February 12, 2026 Update - Wake/Sleep System */}
           <div className="border-l-2 border-cyan-500 pl-4">
             <p className="text-sm text-cyan-400 font-medium">February 12, 2026</p>

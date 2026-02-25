@@ -74,6 +74,32 @@ export default function Architecture() {
           </div>
 
           <div className="hud-box p-5">
+            <h3 className="text-base font-medium text-white mb-2">Pre-Recorded Audio System</h3>
+            <p className="text-[var(--text-secondary)] mb-3 text-sm">
+              Zero-delay voice feedback with modular audio chaining.
+            </p>
+            <ul className="text-[var(--text-muted)] text-sm space-y-1">
+              <li>Three coach personalities (Serious, Friendly, Fierce)</li>
+              <li>Modular numbers (1-20) + modifiers</li>
+              <li>ElevenLabs TTS for generation</li>
+              <li>Local storage for instant playback</li>
+            </ul>
+          </div>
+
+          <div className="hud-box p-5">
+            <h3 className="text-base font-medium text-white mb-2">RL Coaching Service</h3>
+            <p className="text-[var(--text-secondary)] mb-3 text-sm">
+              FSM-Constrained PPO model for workout intensity optimization.
+            </p>
+            <ul className="text-[var(--text-muted)] text-sm space-y-1">
+              <li>ONNX/TFLite mobile deployment</li>
+              <li>6 action space (2 FSM + 4 RL)</li>
+              <li>5-feature biometric state input</li>
+              <li>&gt;90% validation accuracy</li>
+            </ul>
+          </div>
+
+          <div className="hud-box p-5">
             <h3 className="text-base font-medium text-white mb-2">Dungeon Raid Game</h3>
             <p className="text-[var(--text-secondary)] mb-3 text-sm">
               Turn-based RPG mini-game powered by Flame 2D engine.
@@ -151,6 +177,8 @@ export default function Architecture() {
               <li>Python 3.9+</li>
               <li>MediaPipe</li>
               <li>ChromaDB</li>
+              <li>ONNX Runtime</li>
+              <li>FSM-PPO RL</li>
             </ul>
           </div>
           <div className="hud-box p-4">
@@ -213,7 +241,8 @@ function ArchitectureDiagram() {
       {/* Bottom Layer */}
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
         <DiagramBox title="ESP32" subtitle="Wearable" color="purple" className="flex-1" />
-        <DiagramBox title="AI Coach" subtitle="RAG" color="cyan" className="flex-1" />
+        <DiagramBox title="AI Coach" subtitle="RAG + Audio" color="cyan" className="flex-1" />
+        <DiagramBox title="RL Service" subtitle="FSM-PPO" color="green" className="flex-1" />
         <DiagramBox title="Web3" subtitle="MetaMask" color="orange" className="flex-1" />
       </div>
 

@@ -1,52 +1,52 @@
 export default function Hardware() {
   return (
-    <div className="max-w-3xl">
-      <h1 className="text-3xl font-bold text-white mb-2">
+    <div className="max-w-3xl w-full overflow-x-hidden">
+      <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2">
         Hardware
       </h1>
-      <p className="text-[var(--text-secondary)] mb-8">
+      <p className="text-[var(--text-secondary)] mb-6 sm:mb-8 text-sm sm:text-base">
         Custom ESP32-S3 smartwatch for biometric monitoring and activity tracking.
       </p>
 
       {/* Watch Images Gallery */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Aerovit Watch</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <div className="hud-box p-3 overflow-hidden">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Aerovit Watch</h2>
+        <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6">
+          <div className="hud-box p-1.5 sm:p-3 overflow-hidden">
             <img 
               src="/watch-img/watch.jpg" 
               alt="Aerovit Watch Front View" 
-              className="w-full h-48 object-cover rounded-lg"
+              className="w-full h-20 sm:h-48 object-cover rounded"
             />
-            <p className="text-[var(--text-muted)] text-xs text-center mt-2">Front View</p>
+            <p className="text-[var(--text-muted)] text-[10px] sm:text-xs text-center mt-1 sm:mt-2">Front View</p>
           </div>
-          <div className="hud-box p-3 overflow-hidden">
+          <div className="hud-box p-1.5 sm:p-3 overflow-hidden">
             <img 
               src="/watch-img/watch-worn.jpg" 
               alt="Aerovit Watch Worn on Wrist" 
-              className="w-full h-48 object-cover rounded-lg"
+              className="w-full h-20 sm:h-48 object-cover rounded"
             />
-            <p className="text-[var(--text-muted)] text-xs text-center mt-2">Worn on Wrist</p>
+            <p className="text-[var(--text-muted)] text-[10px] sm:text-xs text-center mt-1 sm:mt-2">Worn on Wrist</p>
           </div>
-          <div className="hud-box p-3 overflow-hidden">
+          <div className="hud-box p-1.5 sm:p-3 overflow-hidden">
             <img 
               src="/watch-img/watch_on_case.jpg" 
               alt="Aerovit Watch with Case" 
-              className="w-full h-48 object-cover rounded-lg"
+              className="w-full h-20 sm:h-48 object-cover rounded"
             />
-            <p className="text-[var(--text-muted)] text-xs text-center mt-2">With Case</p>
+            <p className="text-[var(--text-muted)] text-[10px] sm:text-xs text-center mt-1 sm:mt-2">With Case</p>
           </div>
         </div>
       </section>
 
       {/* Hardware Specifications */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Hardware Specifications</h2>
-        <div className="hud-box p-5">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Hardware Specifications</h2>
+        <div className="hud-box p-4 sm:p-5">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-4">
             <div>
               <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Core Components</h3>
-              <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <ul className="text-[var(--text-secondary)] space-y-2 text-xs sm:text-sm">
                 <li><span className="text-white">Board:</span> Waveshare ESP32-S3-Touch-LCD-1.69</li>
                 <li><span className="text-white">Display:</span> 240×280 ST7789 with capacitive touch</li>
                 <li><span className="text-white">Touch:</span> CST816S controller</li>
@@ -55,7 +55,7 @@ export default function Hardware() {
             </div>
             <div>
               <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Sensors</h3>
-              <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <ul className="text-[var(--text-secondary)] space-y-2 text-xs sm:text-sm">
                 <li><span className="text-white">MAX30102:</span> Pulse oximeter (SpO2 + Heart Rate)</li>
                 <li><span className="text-white">QMI8658:</span> 6-axis IMU (Accel + Gyro)</li>
               </ul>
@@ -65,12 +65,12 @@ export default function Hardware() {
       </section>
 
       {/* IMU Configuration */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">IMU (QMI8658) Configuration</h2>
-        <div className="hud-box p-5">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">IMU (QMI8658) Configuration</h2>
+        <div className="hud-box p-4 sm:p-5">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Motion Sensing Parameters</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[400px]">
               <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
                 <tr>
                   <th className="py-2 px-3">Parameter</th>
@@ -104,24 +104,24 @@ export default function Hardware() {
           </div>
         </div>
 
-        <div className="hud-box p-5 mt-4">
+        <div className="hud-box p-4 sm:p-5 mt-4">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Conversion Formulas</h3>
-          <div className="space-y-4 text-sm">
+          <div className="space-y-4 text-xs sm:text-sm">
             <div>
               <p className="text-white mb-1">Accelerometer</p>
-              <code className="block bg-[var(--background)] p-3 rounded text-[var(--text-muted)] text-xs">
+              <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
                 Acceleration (g) = Raw_Value × 0.000122 g/LSB
               </code>
             </div>
             <div>
               <p className="text-white mb-1">Gyroscope</p>
-              <code className="block bg-[var(--background)] p-3 rounded text-[var(--text-muted)] text-xs">
+              <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
                 Angular Velocity (°/s) = Raw_Value × 0.0078125 °/s/LSB
               </code>
             </div>
             <div>
               <p className="text-white mb-1">Magnitude</p>
-              <code className="block bg-[var(--background)] p-3 rounded text-[var(--text-muted)] text-xs">
+              <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
                 magnitude = √(ax² + ay² + az²)
               </code>
             </div>
@@ -130,15 +130,15 @@ export default function Hardware() {
       </section>
 
       {/* Step Detection */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Step Detection Algorithm</h2>
-        <p className="text-[var(--text-secondary)] mb-4 text-sm">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Step Detection Algorithm</h2>
+        <p className="text-[var(--text-secondary)] mb-4 text-xs sm:text-sm">
           High-Pass Filter + Zero-Crossing Detection for accurate step counting.
         </p>
-        <div className="hud-box p-5">
+        <div className="hud-box p-4 sm:p-5">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Algorithm Parameters</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[400px]">
               <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
                 <tr>
                   <th className="py-2 px-3">Parameter</th>
@@ -172,9 +172,9 @@ export default function Hardware() {
           </div>
         </div>
 
-        <div className="hud-box p-5 mt-4">
+        <div className="hud-box p-4 sm:p-5 mt-4">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">High-Pass Filter Formula</h3>
-          <code className="block bg-[var(--background)] p-3 rounded text-[var(--text-muted)] text-xs">
+          <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
             hp_output = α × (hp_output_prev + raw - raw_prev)<br/>
             Where: α = τ / (τ + dt) = 0.5 / (0.5 + 0.02) = 0.96
           </code>
@@ -182,15 +182,15 @@ export default function Hardware() {
       </section>
 
       {/* Activity Classification */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Activity Classification</h2>
-        <p className="text-[var(--text-secondary)] mb-4 text-sm">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Activity Classification</h2>
+        <p className="text-[var(--text-secondary)] mb-4 text-xs sm:text-sm">
           Cadence-based classification using Tudor-Locke et al. (2018) walking cadence research.
         </p>
-        <div className="hud-box p-5">
+        <div className="hud-box p-4 sm:p-5">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Activity Thresholds</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[320px]">
               <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
                 <tr>
                   <th className="py-2 px-3">Activity</th>
@@ -236,12 +236,12 @@ export default function Hardware() {
       </section>
 
       {/* Heart Rate & SpO2 */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Heart Rate & SpO2 (MAX30102)</h2>
-        <div className="hud-box p-5">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Heart Rate & SpO2 (MAX30102)</h2>
+        <div className="hud-box p-4 sm:p-5">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Sensor Configuration</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[400px]">
               <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
                 <tr>
                   <th className="py-2 px-3">Parameter</th>
@@ -280,9 +280,9 @@ export default function Hardware() {
           </div>
         </div>
 
-        <div className="hud-box p-5 mt-4">
+        <div className="hud-box p-4 sm:p-5 mt-4">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">SpO2 Calculation</h3>
-          <code className="block bg-[var(--background)] p-3 rounded text-[var(--text-muted)] text-xs">
+          <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
             R = (AC_red / DC_red) / (AC_ir / DC_ir)<br/>
             SpO2 ≈ 110 - 25 × R
           </code>
@@ -291,9 +291,9 @@ export default function Hardware() {
           </p>
         </div>
 
-        <div className="hud-box p-5 mt-4">
+        <div className="hud-box p-4 sm:p-5 mt-4">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Finger Detection (Hysteresis)</h3>
-          <code className="block bg-[var(--background)] p-3 rounded text-[var(--text-muted)] text-xs">
+          <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
             // Prevents flickering<br/>
             if (was_finger_detected)<br/>
             &nbsp;&nbsp;finger_detected = (IR_value &gt; 30000); // Lower threshold<br/>
@@ -304,23 +304,23 @@ export default function Hardware() {
       </section>
 
       {/* Calorie Estimation */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Calorie Estimation</h2>
-        <p className="text-[var(--text-secondary)] mb-4 text-sm">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Calorie Estimation</h2>
+        <p className="text-[var(--text-secondary)] mb-4 text-xs sm:text-sm">
           MET-based calculation using the Ainsworth Compendium of Physical Activities (2011).
         </p>
-        <div className="hud-box p-5">
+        <div className="hud-box p-4 sm:p-5">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Formula</h3>
-          <code className="block bg-[var(--background)] p-3 rounded text-[var(--text-muted)] text-xs">
+          <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
             Calories/minute = MET × Weight(kg) × 3.5 / 200<br/><br/>
             For 1-second updates:<br/>
             Calories/second = MET × Weight(kg) × 0.000292
           </code>
         </div>
 
-        <div className="hud-box p-5 mt-4">
+        <div className="hud-box p-4 sm:p-5 mt-4">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Example (70kg user, Brisk Walking)</h3>
-          <ul className="text-[var(--text-secondary)] space-y-1 text-sm">
+          <ul className="text-[var(--text-secondary)] space-y-1 text-xs sm:text-sm">
             <li><span className="text-white">MET:</span> 4.3</li>
             <li><span className="text-white">Calories/min:</span> 4.3 × 70 × 3.5 / 200 = 5.27 cal/min</li>
             <li><span className="text-white">Calories/hour:</span> 316 cal/hour</li>
@@ -329,21 +329,21 @@ export default function Hardware() {
       </section>
 
       {/* BLE Protocol */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">BLE Protocol</h2>
-        <div className="hud-box p-5">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">BLE Protocol</h2>
+        <div className="hud-box p-4 sm:p-5">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Service & Characteristics</h3>
-          <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
-            <li><span className="text-white">Service UUID:</span> <code className="text-[var(--text-muted)]">ae0v1t00-1234-5678-abcd-aerovitwatch</code></li>
+          <ul className="text-[var(--text-secondary)] space-y-2 text-xs sm:text-sm">
+            <li className="break-all"><span className="text-white">Service UUID:</span> <code className="text-[var(--text-muted)] text-xs">ae0v1t00-1234-5678-abcd-aerovitwatch</code></li>
             <li><span className="text-white">Biometric Data:</span> Read, Notify (SpO2, HR, Battery, Status)</li>
             <li><span className="text-white">Pairing Status:</span> Read, Write (Confirmation)</li>
           </ul>
         </div>
 
-        <div className="hud-box p-5 mt-4">
+        <div className="hud-box p-4 sm:p-5 mt-4">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Biometric Data Packet (28 bytes)</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[320px]">
               <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
                 <tr>
                   <th className="py-2 px-3">Offset</th>
@@ -399,10 +399,10 @@ export default function Hardware() {
       </section>
 
       {/* Pairing Flow */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Pairing Flow</h2>
-        <div className="hud-box p-5">
-          <ol className="text-[var(--text-secondary)] space-y-2 text-sm list-decimal list-inside">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Pairing Flow</h2>
+        <div className="hud-box p-4 sm:p-5">
+          <ol className="text-[var(--text-secondary)] space-y-2 text-xs sm:text-sm list-decimal list-inside">
             <li>User taps "Pair with App" on watch dashboard</li>
             <li>Watch displays QR code and starts BLE advertising</li>
             <li>User scans QR code with Aerovit mobile app</li>
@@ -415,9 +415,9 @@ export default function Hardware() {
           </ol>
         </div>
 
-        <div className="hud-box p-5 mt-4">
+        <div className="hud-box p-4 sm:p-5 mt-4">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">QR Code Payload</h3>
-          <code className="block bg-[var(--background)] p-3 rounded text-[var(--text-muted)] text-xs">
+          <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
             {`{
   "id": "AABBCCDDEEFF",
   "name": "AerovitWatch-EEFF",
@@ -429,12 +429,12 @@ export default function Hardware() {
       </section>
 
       {/* Gesture Detection */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Gesture Detection</h2>
-        <div className="hud-box p-5">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Gesture Detection</h2>
+        <div className="hud-box p-4 sm:p-5">
           <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Raise-to-Wake Parameters</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[320px]">
               <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
                 <tr>
                   <th className="py-2 px-3">Parameter</th>
@@ -464,11 +464,247 @@ export default function Hardware() {
         </div>
       </section>
 
+      {/* Hardware Wallet */}
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Hardware Wallet (On-Device)</h2>
+        <p className="text-[var(--text-secondary)] mb-4 text-xs sm:text-sm">
+          ESP32-S3 acts as a hardware crypto wallet — private keys never leave the device.
+          Supports Ethereum (secp256k1) key generation, ECDSA signing, and secure PIN-protected storage.
+        </p>
+
+        <div className="hud-box p-4 sm:p-5">
+          <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Wallet Architecture</h3>
+          <ul className="text-[var(--text-secondary)] space-y-2 text-xs sm:text-sm">
+            <li><span className="text-white">Key Generation:</span> BIP-39 mnemonic → BIP-32 seed → secp256k1 private key</li>
+            <li><span className="text-white">Address Derivation:</span> Public key → Keccak-256 hash → last 20 bytes = ETH address</li>
+            <li><span className="text-white">Storage:</span> AES-256-CBC encrypted private key in ESP32 NVS (Non-Volatile Storage)</li>
+            <li><span className="text-white">PIN Protection:</span> PBKDF2 with 10,000 iterations, 5-attempt lockout (5 min cooldown)</li>
+            <li><span className="text-white">Signing:</span> Decrypt key in RAM only during signing, immediately wiped after</li>
+            <li><span className="text-white">Recovery ID:</span> EIP-2 s-normalization with algebraic v-value reconstruction</li>
+          </ul>
+        </div>
+
+        <div className="hud-box p-4 sm:p-5 mt-4">
+          <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Crypto Primitives (Custom ESP32 Implementation)</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[400px]">
+              <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
+                <tr>
+                  <th className="py-2 px-3">Algorithm</th>
+                  <th className="py-2 px-3">Usage</th>
+                  <th className="py-2 px-3">Library</th>
+                </tr>
+              </thead>
+              <tbody className="text-[var(--text-secondary)]">
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">Keccak-256</td>
+                  <td className="py-2 px-3 text-white">ETH address derivation</td>
+                  <td className="py-2 px-3">Custom (not SHA3 — uses 0x01 padding)</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">secp256k1 ECDSA</td>
+                  <td className="py-2 px-3 text-white">Transaction signing</td>
+                  <td className="py-2 px-3">mbedTLS</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">AES-256-CBC</td>
+                  <td className="py-2 px-3 text-white">Private key encryption (PKCS7)</td>
+                  <td className="py-2 px-3">mbedTLS</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">PBKDF2-HMAC-SHA256</td>
+                  <td className="py-2 px-3 text-white">PIN → encryption key</td>
+                  <td className="py-2 px-3">mbedTLS</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">PBKDF2-HMAC-SHA512</td>
+                  <td className="py-2 px-3 text-white">Mnemonic → seed</td>
+                  <td className="py-2 px-3">mbedTLS</td>
+                </tr>
+                <tr>
+                  <td className="py-2 px-3">HMAC-SHA512</td>
+                  <td className="py-2 px-3 text-white">BIP-32 master key</td>
+                  <td className="py-2 px-3">mbedTLS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="hud-box p-4 sm:p-5 mt-4">
+          <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">NVS Storage Layout</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[320px]">
+              <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
+                <tr>
+                  <th className="py-2 px-3">Field</th>
+                  <th className="py-2 px-3">Size</th>
+                  <th className="py-2 px-3">Description</th>
+                </tr>
+              </thead>
+              <tbody className="text-[var(--text-secondary)]">
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">encrypted_privkey</td>
+                  <td className="py-2 px-3 text-white">48 bytes</td>
+                  <td className="py-2 px-3">AES-256-CBC + PKCS7 padded</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">iv</td>
+                  <td className="py-2 px-3 text-white">16 bytes</td>
+                  <td className="py-2 px-3">AES initialization vector</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">pin_hash</td>
+                  <td className="py-2 px-3 text-white">32 bytes</td>
+                  <td className="py-2 px-3">PBKDF2-derived PIN hash</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">salt</td>
+                  <td className="py-2 px-3 text-white">16 bytes</td>
+                  <td className="py-2 px-3">Random salt for PBKDF2</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3">eth_address</td>
+                  <td className="py-2 px-3 text-white">20 bytes</td>
+                  <td className="py-2 px-3">Derived Ethereum address</td>
+                </tr>
+                <tr>
+                  <td className="py-2 px-3">tx_count</td>
+                  <td className="py-2 px-3 text-white">4 bytes</td>
+                  <td className="py-2 px-3">Transaction nonce counter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="hud-box p-4 sm:p-5 mt-4">
+          <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Signing Flow</h3>
+          <code className="block bg-[var(--background)] p-2 sm:p-3 rounded text-[var(--text-muted)] text-xs overflow-x-auto">
+            1. App sends 32-byte TX hash via BLE<br/>
+            2. Watch displays sign request on screen<br/>
+            3. User approves via gesture or button<br/>
+            4. PIN-derived key decrypts private key in RAM<br/>
+            5. ECDSA sign (secp256k1) + compute recovery ID (v=27+recid)<br/>
+            6. Private key wiped from RAM immediately<br/>
+            7. 65-byte signature (r + s + v) sent back via BLE<br/>
+            8. tx_count incremented and persisted
+          </code>
+        </div>
+      </section>
+
+      {/* BLE Wallet Protocol */}
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">BLE Wallet Protocol</h2>
+        <p className="text-[var(--text-secondary)] mb-4 text-xs sm:text-sm">
+          Dedicated BLE characteristic for wallet operations between the mobile app and watch.
+        </p>
+
+        <div className="hud-box p-4 sm:p-5">
+          <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">App → Watch Commands</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[400px]">
+              <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
+                <tr>
+                  <th className="py-2 px-3">Opcode</th>
+                  <th className="py-2 px-3">Command</th>
+                  <th className="py-2 px-3">Payload</th>
+                </tr>
+              </thead>
+              <tbody className="text-[var(--text-secondary)]">
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x01</td>
+                  <td className="py-2 px-3">CREATE_WALLET</td>
+                  <td className="py-2 px-3">6-byte PIN</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x02</td>
+                  <td className="py-2 px-3">UNLOCK_WALLET</td>
+                  <td className="py-2 px-3">6-byte PIN</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x03</td>
+                  <td className="py-2 px-3">LOCK_WALLET</td>
+                  <td className="py-2 px-3">none</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x04</td>
+                  <td className="py-2 px-3">GET_ADDRESS</td>
+                  <td className="py-2 px-3">none</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x05</td>
+                  <td className="py-2 px-3">SIGN_TX</td>
+                  <td className="py-2 px-3">32-byte TX hash</td>
+                </tr>
+                <tr>
+                  <td className="py-2 px-3 text-white">0x06</td>
+                  <td className="py-2 px-3">GET_STATUS</td>
+                  <td className="py-2 px-3">none</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="hud-box p-4 sm:p-5 mt-4">
+          <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Watch → App Responses</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[400px]">
+              <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
+                <tr>
+                  <th className="py-2 px-3">Opcode</th>
+                  <th className="py-2 px-3">Response</th>
+                  <th className="py-2 px-3">Payload</th>
+                </tr>
+              </thead>
+              <tbody className="text-[var(--text-secondary)]">
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x81</td>
+                  <td className="py-2 px-3">CREATED</td>
+                  <td className="py-2 px-3">20-byte address + seed phrase</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x82</td>
+                  <td className="py-2 px-3">UNLOCKED</td>
+                  <td className="py-2 px-3">1-byte success flag</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x83</td>
+                  <td className="py-2 px-3">ADDRESS</td>
+                  <td className="py-2 px-3">42-byte hex string (0x-prefixed)</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x84</td>
+                  <td className="py-2 px-3">SIGNATURE</td>
+                  <td className="py-2 px-3">65-byte (r + s + v)</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x85</td>
+                  <td className="py-2 px-3">STATUS</td>
+                  <td className="py-2 px-3">1-byte wallet_status_t enum</td>
+                </tr>
+                <tr className="border-b border-[var(--primary)]/10">
+                  <td className="py-2 px-3 text-white">0x86</td>
+                  <td className="py-2 px-3">SIGN_REQUEST</td>
+                  <td className="py-2 px-3">Awaiting user gesture</td>
+                </tr>
+                <tr>
+                  <td className="py-2 px-3 text-white">0x87</td>
+                  <td className="py-2 px-3">SIGN_REJECTED</td>
+                  <td className="py-2 px-3">User rejected signing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* Scientific References */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Scientific References</h2>
-        <div className="hud-box p-5">
-          <ul className="text-[var(--text-secondary)] space-y-3 text-sm">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Scientific References</h2>
+        <div className="hud-box p-4 sm:p-5">
+          <ul className="text-[var(--text-secondary)] space-y-3 text-xs sm:text-sm">
             <li>
               <span className="text-white">Tudor-Locke, C. et al. (2018)</span>
               <p className="text-[var(--text-muted)] text-xs mt-1">
@@ -498,11 +734,11 @@ export default function Hardware() {
       </section>
 
       {/* Pin Configuration */}
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold text-white mb-4">Pin Configuration</h2>
-        <div className="hud-box p-5">
+      <section className="mb-8 sm:mb-10">
+        <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">Pin Configuration</h2>
+        <div className="hud-box p-4 sm:p-5">
           <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-xs sm:text-sm text-left min-w-[280px]">
               <thead className="text-[var(--primary-light)] border-b border-[var(--primary)]/20">
                 <tr>
                   <th className="py-2 px-3">Function</th>

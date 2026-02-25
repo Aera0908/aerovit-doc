@@ -14,7 +14,7 @@ const navigation = [
   {
     title: 'Web3',
     items: [
-      { title: 'Tokenomics', path: '/tokenomics', disabled: true },
+      { title: 'Tokenomics', path: '/tokenomics' },
     ]
   }
 ]
