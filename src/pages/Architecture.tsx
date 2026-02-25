@@ -131,7 +131,7 @@ export default function Architecture() {
         <h2 className="text-xl font-semibold text-white mb-4">Data Flow</h2>
         <div className="hud-box p-5">
           <ol className="text-[var(--text-secondary)] space-y-2 text-sm list-decimal list-inside">
-            <li>User authenticates via Firebase (Email, Google, Facebook, or MetaMask)</li>
+            <li>User authenticates via Firebase (Email, Google, or Facebook)</li>
             <li>App fetches user profile and daily quest from Firestore</li>
             <li>User starts workout session</li>
             <li>BlazePose analyzes camera feed for rep counting</li>
@@ -193,7 +193,7 @@ export default function Architecture() {
             <h4 className="text-sm font-medium text-[var(--primary-light)] mb-2">Web3</h4>
             <ul className="text-[var(--text-secondary)] text-sm space-y-1">
               <li>Ethereum</li>
-              <li>MetaMask</li>
+              <li>Hardware Wallet (ESP32)</li>
               <li>ERC-20 Tokens</li>
             </ul>
           </div>
@@ -243,7 +243,7 @@ function ArchitectureDiagram() {
         <DiagramBox title="ESP32" subtitle="Wearable" color="purple" className="flex-1" />
         <DiagramBox title="AI Coach" subtitle="RAG + Audio" color="cyan" className="flex-1" />
         <DiagramBox title="RL Service" subtitle="FSM-PPO" color="green" className="flex-1" />
-        <DiagramBox title="Web3" subtitle="MetaMask" color="orange" className="flex-1" />
+        <DiagramBox title="Web3" subtitle="HW Wallet" color="orange" className="flex-1" />
       </div>
 
       {/* Legend */}

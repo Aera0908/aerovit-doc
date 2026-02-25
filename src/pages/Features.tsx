@@ -156,10 +156,9 @@ export default function Features() {
             <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
               <li><span className="text-white">AERO Token:</span> ERC-20 token for workout rewards (Sepolia Testnet)</li>
               <li><span className="text-white">Hardware Wallet:</span> ESP32-S3 watch generates & stores keys, signs transactions via BLE</li>
-              <li><span className="text-white">Software Wallets:</span> MetaMask, WalletConnect, and embedded wallet support</li>
               <li><span className="text-white">Move-to-Earn:</span> Earn tokens for completing daily quests and workouts</li>
               <li><span className="text-white">Token Burning:</span> 5% withdrawal fee burned on-chain for deflationary economics</li>
-              <li><span className="text-white">Social Auth:</span> Google, Facebook, and MetaMask authentication</li>
+              <li><span className="text-white">Social Auth:</span> Google and Facebook authentication</li>
               <li><span className="text-white">On-Chain:</span> Transparent reward distribution via smart contracts</li>
             </ul>
           </div>
@@ -182,7 +181,7 @@ export default function Features() {
               <li><span className="text-white">Email/Password:</span> Traditional Firebase authentication</li>
               <li><span className="text-white">Google Sign-In:</span> Quick access via Google account</li>
               <li><span className="text-white">Facebook Login:</span> Social authentication integration</li>
-              <li><span className="text-white">MetaMask:</span> Web3 wallet-based authentication with Ethereum address</li>
+              <li><span className="text-white">Watch Wallet:</span> Hardware wallet authentication via BLE-paired ESP32 watch</li>
             </ul>
           </div>
         </section>

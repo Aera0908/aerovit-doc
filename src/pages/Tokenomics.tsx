@@ -133,20 +133,11 @@ export default function Tokenomics() {
           </div>
 
           <div className="hud-box p-5">
-            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Software Wallets</h3>
-            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
-              <li><span className="text-white">MetaMask:</span> Primary wallet integration with sign-in support</li>
-              <li><span className="text-white">WalletConnect:</span> Connect any compatible mobile wallet</li>
-              <li><span className="text-white">Embedded Wallet:</span> In-app wallet for new crypto users</li>
-            </ul>
-          </div>
-
-          <div className="hud-box p-5">
             <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Authentication Methods</h3>
             <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
-              <li><span className="text-white">MetaMask Sign-In:</span> Authenticate with Ethereum address + signature</li>
-              <li><span className="text-white">Wallet Linking:</span> Link wallet to existing email/social account</li>
-              <li><span className="text-white">Multi-Wallet:</span> Support for multiple wallet addresses</li>
+              <li><span className="text-white">Watch Wallet Auth:</span> Authenticate via BLE-paired hardware wallet address</li>
+              <li><span className="text-white">Wallet Linking:</span> Link hardware wallet to existing email/social account</li>
+              <li><span className="text-white">Social Login:</span> Google and Facebook as alternative sign-in methods</li>
             </ul>
           </div>
         </div>

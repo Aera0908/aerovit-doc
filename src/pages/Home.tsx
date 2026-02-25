@@ -186,7 +186,7 @@ export default function Home() {
             <FeatureCard
               icon={<WalletIcon />}
               title="Web3 Wallet"
-              description="Built-in crypto wallet with MetaMask integration. Earn, store, and manage AERO tokens from your fitness achievements."
+              description="Hardware wallet on your ESP32 watch — keys never leave the device. Earn, store, and manage AERO tokens securely."
             />
           </div>
         </div>
@@ -220,7 +220,7 @@ export default function Home() {
             />
             <TechCard 
               category="Web3" 
-              technologies={['Ethereum', 'ERC-20', 'MetaMask', 'Sepolia']} 
+              technologies={['Ethereum', 'ERC-20', 'Hardware Wallet', 'Sepolia']} 
             />
           </div>
         </div>
@@ -253,9 +253,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">MetaMask Wallet</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">Hardware Watch Wallet</h3>
               <p className="text-sm text-[var(--text-secondary)]">
-                Secure wallet integration for managing your AERO tokens and fitness rewards
+                On-device key storage and transaction signing on your ESP32 smartwatch
               </p>
             </div>
             
