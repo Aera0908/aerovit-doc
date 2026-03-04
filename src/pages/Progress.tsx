@@ -1,7 +1,7 @@
 export default function Progress() {
   const progressData = [
     { category: 'Mobile App', percentage: 92, status: 'In Development' },
-    { category: 'Dungeon Raid Game', percentage: 80, status: 'In Development' },
+    { category: 'Dungeon Raid Game', percentage: 92, status: 'In Development' },
     { category: 'Wearable Device', percentage: 90, status: 'In Development' },
     { category: 'AI Coach', percentage: 75, status: 'In Development' },
     { category: 'Web3 Integration', percentage: 85, status: 'In Development' },
@@ -62,6 +62,62 @@ export default function Progress() {
       <div className="hud-panel p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Recent Updates</h2>
         <div className="space-y-6">
+          {/* March 4, 2026 Update - Dungeon Game Major Expansion */}
+          <div className="border-l-2 border-red-500 pl-4">
+            <p className="text-sm text-red-400 font-medium">March 4, 2026</p>
+            <p className="text-white font-semibold mb-2">Dungeon Raid — 20-Floor Expansion, Equipment, Consumables &amp; Full Audio</p>
+            <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">20-Floor Dungeon</strong> — Expanded from 5 to 20 floors with 10 enemy species, 62 encounters, and progressive difficulty</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Boss System</strong> — Floor 10 mini-boss (Venom Widow) and Floor 20 final boss (Demon Lord) with 3-phase mechanic (solo → summons adds → AoE rage)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Equipment System</strong> — 11 weapons + 11 armors (Common to Legendary) with on-hit effects: poison, bleed, lifesteal, deflect</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Consumable Items</strong> — 9 consumables (potions, antidotes, salves, elixirs, buff crystals); bag UI with scroll, select, and use</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Player Status Effects</strong> — Enemies now apply status effects to player; player processes DoTs, stun/freeze/paralysis skip turns</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">44 VFX Classes</strong> — Per-skill visual effects for all 23 player skills and enemy abilities with screen shake</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">43 SFX Files</strong> — Complete audio: skill SFX, enemy attack SFX (bite, rock smash/blast/slide, bone, web, poison, paralyze), hit impacts, blocks, UI, death</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">BGM System</strong> — Battle intro → seamless loop → outro architecture with victory fanfare; AudioContext SFX/BGM conflict fix</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">SFX Timing Polish</strong> — VFX → hit impact sequencing (500ms magic, 300ms physical); wait-for-playback system for proper audio flow</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Save &amp; Resume</strong> — Exit mid-dungeon and resume from current floor; consumable state, gold, and progress persisted to Firestore</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Floor Reward System</strong> — Gold scaling (80 + floor×20), first-clear bonuses, replay reduction (20%), loot drops by floor tier</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 mt-0.5">✓</span>
+                <span><strong className="text-white">Shop System</strong> — 4-tab shop (Weapons, Armor, Consumables, Skill Tree) with 5 rarity tiers and gold currency</span>
+              </li>
+            </ul>
+          </div>
+
           {/* February 25, 2026 Update - Hardware Wallet & Token Burning */}
           <div className="border-l-2 border-amber-500 pl-4">
             <p className="text-sm text-amber-400 font-medium">February 25, 2026</p>

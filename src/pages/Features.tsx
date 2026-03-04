@@ -120,16 +120,41 @@ export default function Features() {
           <h2 className="text-xl font-semibold text-white mb-4">Dungeon Raid Game</h2>
           <p className="text-[var(--text-secondary)] mb-4 text-sm">
             Pokemon-style turn-based dungeon crawler where your workout progress powers your in-game character.
+            20-floor dungeon with 10 enemy species, 3-phase final boss, full equipment and consumable systems.
           </p>
           <div className="hud-box p-5">
             <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Game Features</h3>
             <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
-              <li><span className="text-white">Turn-Based Combat:</span> Speed-based turn order with strategic skill selection</li>
-              <li><span className="text-white">Status Effects:</span> 10 effects including Poison, Burn, Freeze, Paralysis, and more</li>
-              <li><span className="text-white">Skill System:</span> 20+ skills across Physical, Magic, Heal, Buff, and Status categories</li>
-              <li><span className="text-white">Multi-Enemy Battles:</span> Fight multiple enemies per floor with target selection</li>
-              <li><span className="text-white">5-Floor Dungeons:</span> Progressive difficulty with boss fights</li>
-              <li><span className="text-white">AERO Token Rewards:</span> Earn tokens for dungeon completion</li>
+              <li><span className="text-white">Turn-Based Combat:</span> Speed-based turn order with strategic skill and item selection</li>
+              <li><span className="text-white">Status Effects:</span> 10 effects (Poison, Burn, Freeze, Paralysis, Bleed, Stun, Weaken, Slow, Blind, Curse) — applied to enemies and player</li>
+              <li><span className="text-white">23 Skills:</span> Physical (9), Magic (6), Heal (3), Buff (2), Status (3) with SP costs and AOE options</li>
+              <li><span className="text-white">10 Enemy Species:</span> Slime, Goblin, Skeleton, Spider, Toxic Slime, Wraith, Golem, Drake, and 2 bosses</li>
+              <li><span className="text-white">20-Floor Dungeon:</span> Progressive difficulty with multi-enemy encounters (up to 5 per floor)</li>
+              <li><span className="text-white">Boss Fights:</span> Floor 10 mini-boss (Venom Widow) + Floor 20 final boss (Demon Lord) with 3-phase mechanic</li>
+              <li><span className="text-white">Save &amp; Resume:</span> Exit mid-run and resume from your current floor; consumable state persisted</li>
+              <li><span className="text-white">AERO Token Rewards:</span> Earn tokens for boss kills + gold/XP/skill points per floor</li>
+            </ul>
+          </div>
+          <div className="hud-box p-5 mt-4">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Equipment &amp; Shop</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">11 Weapons:</span> Common to Legendary with special effects (poison, bleed, lifesteal on-hit)</li>
+              <li><span className="text-white">11 Armors:</span> Common to Legendary with special effects (deflect, poison attacker, lifesteal)</li>
+              <li><span className="text-white">9 Consumables:</span> Health/Stamina Potions, Antidote, Burn Salve, Smelling Salts, Holy Water, Elixir, Power Crystal, Shield Charm</li>
+              <li><span className="text-white">5 Rarity Tiers:</span> Common, Uncommon, Rare, Epic, Legendary</li>
+              <li><span className="text-white">Loot Drops:</span> Floor-scaled drops — Potions, Antidotes (floor 3+), Holy Water (floor 10+ rare)</li>
+              <li><span className="text-white">Skill Tree:</span> Unlock new skills with skill points earned from dungeon runs</li>
+            </ul>
+          </div>
+          <div className="hud-box p-5 mt-4">
+            <h3 className="text-sm font-medium text-[var(--primary-light)] mb-3">Audio &amp; Visual Polish</h3>
+            <ul className="text-[var(--text-secondary)] space-y-2 text-sm">
+              <li><span className="text-white">44 VFX Classes:</span> Per-skill visual effects for all player and enemy abilities</li>
+              <li><span className="text-white">43 SFX Files:</span> Unique sounds for skills, enemy attacks, hits, blocks, UI, and death sequences</li>
+              <li><span className="text-white">BGM System:</span> Intro → seamless loop → outro with victory fanfare; 0.10 volume ducking under SFX</li>
+              <li><span className="text-white">SFX Timing:</span> VFX → delay → hit impact sequence (500ms magic, 300ms physical) for clear feedback</li>
+              <li><span className="text-white">Block Animations:</span> Strong block (perfect, nullifies damage) and weak block with distinct SFX</li>
+              <li><span className="text-white">Death Sequence:</span> Body fall → weapon drop layered SFX</li>
             </ul>
           </div>
           <div className="hud-box p-5 mt-4">
